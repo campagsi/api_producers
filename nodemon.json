@@ -1,0 +1,10 @@
+{
+    "env" : {           
+        "MYSQL_USER":"root",
+        "MYSQL_PASSWORD": "root",
+        "MYSQL_DATABASE":"api_produtor",
+        "MYSQL_HOST":"localhost",
+        "MYSQL_PORT":"3306",
+        "URL_API": "localhost:3000/"
+    }
+}
