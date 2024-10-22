@@ -1,11 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const ProducersController = require('../controllers/producer-controller');
+const Login = require('../middleware/login');
 
-router.get('/', ProducersController.getAll);
-router.post('/', ProducersController.postProducer);
-router.get('/:producerId', ProducersController.getOne);
-router.patch('/:producerId', ProducersController.updateProducer);
-router.delete('/:producerId', ProducersController.deleteProducer);
+router.get('/', Login, ProducersController.getAll);
+router.post('/', Login, ProducersController.postProducer);
+router.get('/:producerId', Login, ProducersController.getOne);
+router.patch('/:producerId', Login, ProducersController.updateProducer);
+router.delete('/:producerId', Login, ProducersController.deleteProducer);
 
 module.exports = router;

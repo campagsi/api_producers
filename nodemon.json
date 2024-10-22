@@ -5,6 +5,7 @@
         "MYSQL_DATABASE":"api_produtor",
         "MYSQL_HOST":"localhost",
         "MYSQL_PORT":"3306",
-        "URL_API": "localhost:3000/"
+        "URL_API": "localhost:3000/",
+        "JWT_KEY": "segredo123"
     }
 }
